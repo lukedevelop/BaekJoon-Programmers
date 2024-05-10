@@ -19,23 +19,23 @@ public class Main {
                 tot -= 500;
                 change++;
             }
-            if (tot >= 100 && tot < 500) {
+            else if (tot >= 100 && tot < 500) {
                 tot -= 100;
                 change++;
             }
-            if (tot >= 50 && tot < 100) {
+            else if (tot >= 50 && tot < 100) {
                 tot -= 50;
                 change++;
             }
-            if (tot >= 10 && tot < 50) {
+            else if (tot >= 10 && tot < 50) {
                 tot -= 10;
                 change++;
             }
-            if (tot >= 5 && tot < 10) {
+            else if (tot >= 5 && tot < 10) {
                 tot -= 5;
                 change++;
             }
-            if (tot >= 1 && tot < 5){
+            else if (tot >= 1 && tot < 5){
                 tot -= 1;
                 change++;
             }
@@ -51,3 +51,7 @@ public class Main {
     }
 
 }
+
+
+
+
