@@ -9,11 +9,9 @@ public class Main {
         String s = br.readLine();
         String[] split = s.split("");
 
-        int chk = 1;
         for (int i = 0; i < split.length; i++) {
             System.out.print(split[i]);
-            if (i == 10 * chk - 1) {
-                chk++;
+            if (i % 10 == 9) {
                 System.out.println();
             }
         }
