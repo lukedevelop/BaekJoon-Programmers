@@ -1,0 +1,4 @@
+select ANIMAL_ID, NAME from ANIMAL_INS 
+WHERE ANIMAL_TYPE = 'Dog'
+AND UPPER(NAME) LIKE UPPER('%el%')
+order by NAME;
