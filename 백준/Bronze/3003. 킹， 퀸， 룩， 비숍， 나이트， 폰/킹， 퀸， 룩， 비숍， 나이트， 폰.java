@@ -10,11 +10,10 @@ public class Main {
             int[] chk = new int[arr.length];
             chk[i] = sc.nextInt();
             res[i] = arr[i] - chk[i];
-        }
-
-        for(int i = 0; i < arr.length; i++){
             System.out.print(res[i]+" ");
         }
+        sc.close();
+        
     }
 
 }
