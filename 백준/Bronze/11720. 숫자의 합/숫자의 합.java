@@ -1,20 +1,20 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        String a = sc.next();
-        String str[] = a.split("");
-
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        String sNum = br.readLine();
+        char[] ch = sNum.toCharArray();
         int sum = 0;
-        for (int i = 0; i < num; i++) {
-            sum += Integer.parseInt(str[i]);
+
+        for(char c : ch){
+            sum += c - '0';
         }
 
         System.out.println(sum);
+
 
 
 
